@@ -14,5 +14,7 @@ function updateClock() {
   document.getElementById("timer").textContent = formattedDate;
 }
 
+window.onload = function() {
 updateClock();              // Run immediately
 setInterval(updateClock, 1000); // Update every second
+};
